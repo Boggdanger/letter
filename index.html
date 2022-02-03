@@ -5,7 +5,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Experience First</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<style>
 		body {
 			width: 100% !important;
@@ -47,8 +51,6 @@
 
 		.orange-banner {
 			background: url('https://github.com/Boggdanger/letter/blob/main/Subtract.png?raw=true') no-repeat center center / cover, #FF9400;
-    		
-
 			color: #ffffff;
 			border-top-left-radius: 12px;
 			border-top-right-radius: 12px;
@@ -59,6 +61,8 @@
 
 		.white-bg {
 			background: #ffffff;
+			border-top-left-radius: 12px;
+    		border-top-right-radius: 12px;
 		}
 
 		.table-520 {
@@ -74,7 +78,7 @@
 
 		.orange-main-title {
 			font-size: 24px;
-			font-weight: 500;
+			font-weight: 600;
 		}
 
 
@@ -114,6 +118,11 @@
 
 		.orange-padding-bottom {
 			padding-bottom: 22px;
+		}
+
+		.banner-td {
+			border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 		}
 
 		.eiffel-tower {
@@ -157,7 +166,7 @@
 
 		.guide-title {
 			font-size: 24px;
-			font-weight: 500;
+			font-weight: 600;
 			display: flex;
 			line-height: 27px;
     		padding-top: 30px;
@@ -194,6 +203,216 @@
 			padding-bottom: 24px;
 		}
 
+		.faq-section__faq-title {
+			font-size: 24px;
+			font-weight: 600;
+			text-align: center;
+			margin-bottom: 21px;
+		}
+
+		.faq-section {
+			margin-top: 24px;
+			line-height: 24px;
+		}
+
+		.faq-section__item-title {
+			font-weight: 600;
+			font-size: 16px;
+			margin-bottom: 8px;
+			line-height: 24px;
+		}
+
+		.faq-section__desc {
+			margin-bottom: 16px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.footer {
+			background: #06273F !important;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			margin-top: 8px;
+			margin-bottom: 32px;
+		}
+
+		.footer__text {
+			color: #ffffff;
+			text-align: center;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.footer__wrapper {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.footer-margin {
+			margin-bottom: 8px;
+		}
+
+		.white-link {
+			color:#ffffff !important;
+		}
+
+		.white-link:hover {
+			color:#ffffff;
+			text-decoration: none;
+		}
+
+
+		@media (prefers-color-scheme: dark) {
+
+			.eiffel-tower {
+				background: #ffffff !important;
+				background-color: #ffffff;
+				color: #000000;
+			}
+
+			#eiffel-tower {
+				background: #ffffff !important;
+			}
+
+			.faq-section {
+				color: #000000;
+			}
+
+			.footer {
+				background: #06273F !important;
+				border-top-left-radius: 12px;
+				border-top-right-radius: 12px;
+				border-bottom-left-radius: 12px;
+				border-bottom-right-radius: 12px;
+				margin-top: 8px;
+				margin-bottom: 32px;
+			}
+
+			#footer {
+				background: #06273F !important;
+			}
+
+			.footer__text {
+				color: #ffffff !important;
+				text-align: center;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+
+		@media (max-width:620px) {
+			.table-600, .white-bg, 
+			.banner-td, 
+			.orange-banner {
+				width: 400px !important;
+			}
+
+			.table-520 {
+				width: 352px  !important;
+			}
+
+			.info-numbers-padding, 
+			.eiffel-tower__paddings {
+				padding-left: 24px !important;
+    			padding-right: 24px !important;
+			}
+
+			.orange-banner {
+				background: url('/mobile_bg_400.png') no-repeat center center / cover, #FF9400;
+			}
+
+			.orange-padding {
+				padding-left: 24px;
+				padding-right: 24px;
+				padding-top: 24px;
+				padding-bottom: 20px;
+			}
+
+			.info-numbers {
+				display: block;
+			}
+
+			.info-numbers {
+				margin-bottom: 16px;
+			}
+
+			.last-number {
+				margin-bottom: 0px;
+			}
+
+			.info-numbers__title {
+				margin-bottom: 4px;
+				line-height: 17px;
+			}
+
+			.white-line {
+				margin-top: 8px;
+				width: 352px  !important;
+			}
+
+			.meeting-point {
+				display: block;
+				margin-top: 4px;
+				margin-bottom: 16px;
+			}
+
+			.language {
+				display: block;
+			}
+
+			.orange-padding-bottom {
+				padding-bottom: 24px;
+			}
+
+			.footer__text {
+				width: 352px;
+				margin: 0 auto;
+			}
+
+			.footer-margin {
+				margin-bottom: 10px;
+			}
+
+		}
+
+		@media (max-width:420px) {
+			.table-600, .white-bg, 
+			.banner-td, 
+			.orange-banner,
+			.footer {
+				width: 320px !important;
+			}
+
+			.table-520 {
+				width: 272px !important;
+			}
+
+			.orange-banner {
+				background: url('/mobile_bg_320.png') no-repeat center center / cover, #FF9400;
+			}
+
+			.white-line {
+				margin-top: 8px;
+				width: 272px !important;
+			}
+
+			.meeting-point {
+				width: 272px;
+			}
+
+			.footer__text {
+				width: 240px;
+				margin: 0 auto;
+			}
+
+			.footer-margin {
+				margin-bottom: 10px;
+			}
+		}
+
+		
 	</style>
 </head>
 
@@ -243,7 +462,7 @@
 													</div>
 													Sun 20 Feb, 2022, 15:00
 												</td>
-												<td class="info-numbers" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
+												<td class="info-numbers last-number" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
 													<div class="info-numbers__title" >
 														Number of guests
 													</div>
@@ -281,7 +500,7 @@
 					</tr>
 					<tr>
 						<td>
-							<table class="eiffel-tower table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+							<table id="eiffel-tower" class="eiffel-tower table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="background: #ffffff;">
 								<tr>
 									<td class="spain-lang eiffel-tower__paddings" style="font-family: 'Inter', arial, sans-serif;">
 										<a href="#" class="spain-link blue-link">
@@ -321,7 +540,7 @@
 								</tr>
 								<tr>
 									<td class="eiffel-tower__paddings">
-										<img class="img-location" src="/google-map.png" alt="location">
+										<img class="img-location" src="https://github.com/Boggdanger/letter/blob/main/google-map.png?raw=true" alt="location">
 									</td>
 								</tr>
 								<tr>
@@ -347,7 +566,137 @@
 								</tr>
 								<tr>
 									<td class="eiffel-tower__paddings last-image">
-										<img class="img-location" src="/IMG_2291-800x600.jpg" alt="photo">
+										<img class="img-location" src="https://github.com/Boggdanger/letter/blob/main/IMG_2291-800x600.jpg?raw=true" alt="photo">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table class="table-600 faq-section" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td>
+										<div class="faq-section__faq-title" style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+											FAQs
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Cancellation policy:
+										</div>
+										<div class="faq-section__desc">
+											You are allowed to cancel up to 24 hours before the tour start time without penalty. 
+											Cancellation requests made within 24 hours of the tour will not be granted.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Sanitation Pass:
+										</div>
+										<div class="faq-section__desc">
+											For the latest requirements related to COVID-19 and Pass Sanitaire, 
+											visit <a href="#" class="blue-link">this website</a>, which is regularly updated.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Can I upgrade my tour to access the top of the Eiffel Tower?
+										</div>
+										<div class="faq-section__desc">
+											Yes! You can upgrade your tour to include Summit Access by following <a href="#" class="blue-link">this link</a>. 
+											Please note, you will not be able to upgrade during the tour. This will be your only chance.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											When does the tour start?
+										</div>
+										<div class="faq-section__desc">
+											The tour will begin on time. Please arrive at least 15 minutes before your tour time. Have your Paris passes 
+											readily available so that you can get checked in by our staff and get your passes scanned.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Can I change the tour date?
+										</div>
+										<div class="faq-section__desc">
+											You can reschedule your booking once up to 24 hours before the tour start time. When you reschedule your booking, 
+											you will not be allowed to cancel the booking or reschedule it further. <br />
+											To manage your booking please press <a href="#" class="blue-link">here</a>.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Wait time
+										</div>
+										<div class="faq-section__desc">
+											This is not a skip-the-line tour, and COVID restrictions, construction work, and security measures at the Eiffel 
+											Tower could result in wait times of over an hour after you check in. Arrive 15 minutes early for check-in and prepare 
+											to wait with your group up to 90 minutes before entering the tower. Thank you for your patience with our staff on site.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Does the tour take place if it rains?
+										</div>
+										<div class="faq-section__desc">
+											The activity runs regardless of weather conditions. In the rare situation when the Eiffel Tower closes, 
+											ticket-holders will be allowed to reschedule to another time (subject to availability) or offered a refund.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											What happens if the summit is closed?
+										</div>
+										<div class="faq-section__desc">
+											Thank you for understanding that sometimes the Eiffel tower closes the summit due to safety reasons. 
+											In this case you will receive a partial refund for the amount of the summit upgrade portion.  
+											For more about summit closures and what to expect, <a href="#" class="blue-link">read our summit guide</a>.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="faq-section__item-title">
+											Are there lockers at the tower?
+										</div>
+										<div class="faq-section__desc">
+											There are no lockers at the tower so please avoid bringing big luggage and baby strollers.
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table id="footer" class="footer table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff; background: #06273F">
+								<tr>
+									<td class="footer__wrapper">
+										<div class="footer__text footer-margin">
+											Also please watch this informative <a href="#" class="white-link">video</a> so you will be prepared.
+										</div>
+										<div class="footer__text">
+											Any questions?  Chat with us by clicking <a href="#" class="white-link">here</a>.
+										</div>
 									</td>
 								</tr>
 							</table>
