@@ -46,12 +46,19 @@
 		}
 
 		.orange-banner {
-			background: url('https://github.com/Boggdanger/letter/blob/main/orange_bg.png?raw=true') center center / cover;
+			background: url('/Subtract.png') no-repeat center center / cover, #FF9400;
+    		
+
 			color: #ffffff;
 			border-top-left-radius: 12px;
 			border-top-right-radius: 12px;
 			border-bottom-left-radius: 12px;
 			border-bottom-right-radius: 12px;
+		}
+
+
+		.white-bg {
+			background: #ffffff;
 		}
 
 		.table-520 {
@@ -109,10 +116,35 @@
 			padding-bottom: 22px;
 		}
 
-		.test-block {
-			height: 500px;
-			width: 600px;
-			color: #ffffff;
+		.eiffel-tower {
+			background: #ffffff;
+		}
+
+		.spain-lang {
+			padding-top: 24px;
+		}
+
+		.spain-link {
+			text-decoration: none;
+		}
+		
+		.spain-link__flag {
+			display: inline-block;
+			width: 29px;
+			height: 20px;
+			transform: translate(0px, 3px);
+		}
+
+		.guide-title {
+			font-size: 24px;
+			font-weight: 500;
+		}
+
+		.guide-title__img {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			transform: translate(0px, 3px);
 		}
 
 
@@ -139,7 +171,7 @@
 							</table>
 						</td>
 					</tr>
-					<tr>
+					<tr class="white-bg">
 						<td class="banner-td">
 							<table class="table-600 orange-banner" cellpadding="0" cellspacing="0" width="600" align="center" >
 								<tr>
@@ -203,8 +235,23 @@
 					</tr>
 					<tr>
 						<td>
-							<table class="test-block">
-
+							<table class="eiffel-tower table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td class="spain-lang" style="font-family: 'Inter', arial, sans-serif;">
+										<a href="#" class="spain-link">
+											<img class="spain-link__flag" src="/es.png" alt="Spain" />
+											<span class="spain-link__text">
+												¿Hablas español?
+											</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="guide-title"  style="font-family: 'Inter', arial, sans-serif;">
+										<img class="guide-title__img" src="/stairs.png" alt="Guide" />
+										Eiffel Tower Guided Climb
+									</td>
+								</tr>
 							</table>
 						</td>
 					</tr>
