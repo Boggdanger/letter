@@ -46,7 +46,7 @@
 		}
 
 		.orange-banner {
-			background: url('/orange_banner.png') center center / cover;
+			background: url('https://github.com/Boggdanger/letter/blob/main/orange_banner.png?raw=true') center center / cover;
 			color: #ffffff;
 			border-top-left-radius: 12px;
 			border-top-right-radius: 12px;
@@ -54,11 +54,15 @@
 			border-bottom-right-radius: 12px;
 		}
 
+		.table-520 {
+			width: 520px;
+		}
+
 		.orange-padding {
 			padding-left: 40px;
 			padding-right: 40px;
-			padding-top: 24px;
-			padding-bottom: 24px;
+			padding-top: 29px;
+			padding-bottom: 29px;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -78,11 +82,34 @@
 
 		.info-numbers__title {
 			font-size: 14px;
+			margin-bottom: 4px;
 		}
 
 		.info-numbers-padding {
 			padding-left: 40px;
 			padding-right: 40px;
+		}
+
+		.white-line {
+			background: rgba(255, 255, 255, 0.2);
+			height: 1px;
+			margin-top: 8px;
+			margin-bottom: 12px;
+			display: block;
+		}
+
+		.meeting-point {
+			width: 334px;
+		}
+
+		.info-numbers__img {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+		}
+
+		.orange-padding-bottom {
+			padding-bottom: 26px;
 		}
 
 
@@ -103,7 +130,7 @@
 							<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 								<tr>
 									<td align="center" class="logo-img">
-										<img src="/full_logo-600x78.png" alt="ExperienceFirst" />
+										<img src="https://github.com/Boggdanger/letter/blob/main/full_logo-600x78.png?raw=true" alt="ExperienceFirst" />
 									</td>
 								</tr>
 							</table>
@@ -113,21 +140,56 @@
 						<td class="banner-td">
 							<table class="table-600 orange-banner" cellpadding="0" cellspacing="0" width="600" align="center" >
 								<tr>
-									<td class="orange-padding"  width="520" >
+									<td class="orange-padding table-520"  width="520" >
 										<h2 align="left" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
 											Stuart Besser
 										</h2>
 									</td>
 								</tr>
 								<tr>
-									<td class="info-numbers-padding" width="520" >
-										<table cellpadding="0" cellspacing="0" width="520" align="center">
+									<td class="info-numbers-padding table-520" width="520" >
+										<table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
 											<tr>
 												<td class="info-numbers" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
 													<h5 class="info-numbers__title" >
 														Booking Reference
 													</h5>
 													6NYFCZ
+												</td>
+												<td class="info-numbers" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
+													<h5 class="info-numbers__title" >
+														Date and time
+													</h5>
+													Sun 20 Feb, 2022, 15:00
+												</td>
+												<td class="info-numbers" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
+													<h5 class="info-numbers__title" >
+														Number of guests
+													</h5>
+													2
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr align="center">
+									<td class="white-line table-520"></td>
+								</tr>
+								<tr>
+									<td class="info-numbers-padding table-520 orange-padding-bottom">
+										<table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+											<tr>
+												<td class="meeting-point" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
+													<h5 class="info-numbers__title" >
+														Meeting point
+													</h5>
+													All. des Refuzniks, 75007 Paris, France <img class="info-numbers__img" src="/external-link.png" alt="Go" />
+												</td>
+												<td class="language" style="font-family: 'Inter', arial, sans-serif; font-color:#ffffff;" >
+													<h5 class="info-numbers__title" >
+														Tour language
+													</h5>
+													English
 												</td>
 											</tr>
 										</table>
