@@ -46,7 +46,7 @@
 		}
 
 		.orange-banner {
-			background: url('/Subtract.png') no-repeat center center / cover, #FF9400;
+			background: url('https://github.com/Boggdanger/letter/blob/main/Subtract.png?raw=true') no-repeat center center / cover, #FF9400;
     		
 
 			color: #ffffff;
@@ -118,35 +118,81 @@
 
 		.eiffel-tower {
 			background: #ffffff;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
 		}
 
 		.spain-lang {
-			padding-top: 24px;
+			padding-top: 27px;
 		}
 
 		.spain-link {
+			display: flex;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		.spain-link:hover {	
+			display: flex;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		.blue-link {
 			text-decoration: none;
+			color: #0000EE;
+		}
+
+		.blue-link:hover {
+			text-decoration: underline;
+			color: #0000EE;
 		}
 		
 		.spain-link__flag {
 			display: inline-block;
 			width: 29px;
 			height: 20px;
-			transform: translate(0px, 3px);
+			margin-right: 8px;
 		}
 
 		.guide-title {
 			font-size: 24px;
 			font-weight: 500;
+			display: flex;
+			line-height: 27px;
+    		padding-top: 30px;
+			margin-bottom: 16px;
 		}
 
 		.guide-title__img {
 			display: inline-block;
 			width: 24px;
 			height: 24px;
-			transform: translate(0px, 3px);
+			margin-right: 16px;
 		}
 
+		.eiffel-tower__paddings {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.eiffel-tower__desc {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.eiffel-tower__desc_margin {
+			margin-top: 16px;
+			margin-bottom: 16px;
+		}
+
+		.img-location {
+			margin-bottom: 16px;
+		}
+
+		.last-image {
+			padding-bottom: 24px;
+		}
 
 	</style>
 </head>
@@ -237,9 +283,9 @@
 						<td>
 							<table class="eiffel-tower table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 								<tr>
-									<td class="spain-lang" style="font-family: 'Inter', arial, sans-serif;">
-										<a href="#" class="spain-link">
-											<img class="spain-link__flag" src="/es.png" alt="Spain" />
+									<td class="spain-lang eiffel-tower__paddings" style="font-family: 'Inter', arial, sans-serif;">
+										<a href="#" class="spain-link blue-link">
+											<img class="spain-link__flag" src="https://github.com/Boggdanger/letter/blob/main/es.png?raw=true" alt="Spain" />
 											<span class="spain-link__text">
 												¿Hablas español?
 											</span>
@@ -247,9 +293,61 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="guide-title"  style="font-family: 'Inter', arial, sans-serif;">
-										<img class="guide-title__img" src="/stairs.png" alt="Guide" />
+									<td class="guide-title eiffel-tower__paddings"  style="font-family: 'Inter', arial, sans-serif;">
+										<img class="guide-title__img" src="https://github.com/Boggdanger/letter/blob/main/stairs.png?raw=true" alt="Guide" />
 										Eiffel Tower Guided Climb
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="eiffel-tower__desc eiffel-tower__paddings">
+											Please meet us outside the Eiffel Tower and do not pass through any security checks. 
+											You will find us outside the South Security Entrance (Entrance #1) of the Eiffel 
+											Tower on Allée des Refuzniks. (The Allée des Refuzniks is a dirt footpath just outside 
+											of the Eiffel Tower near the trees and the benches.)
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="eiffel-tower__desc eiffel-tower__desc_margin eiffel-tower__paddings">
+											For easier navigation, you can paste these coordinates into Google Maps:
+											<a href="https://goo.gl/maps/8PHAcaw9NqS5tKZKA" class="blue-link">
+												48.857358,2.293079
+											</a>
+											.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="eiffel-tower__paddings">
+										<img class="img-location" src="/google-map.png" alt="location">
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="eiffel-tower__desc eiffel-tower__paddings">
+											The check-in starts 30 minutes before the start time. Please arrive at least 15 minutes before 
+											your tour time because the tour usually starts on time. If you booked through your Paris pass, 
+											please have your Paris passes readily available so that you can get checked in by our staff and 
+											get your passes scanned. For more details, visit our 
+											<a href="#" class="blue-link">
+												welcome page
+											</a>
+											.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: 'Inter', arial, sans-serif; font-color:#000000;">
+										<div class="eiffel-tower__desc eiffel-tower__desc_margin eiffel-tower__paddings">
+											Our team will be wearing orange hats and holding an orange sign that says “ExperienceFirst.”
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="eiffel-tower__paddings last-image">
+										<img class="img-location" src="/IMG_2291-800x600.jpg" alt="photo">
 									</td>
 								</tr>
 							</table>
